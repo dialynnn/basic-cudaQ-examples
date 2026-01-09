@@ -39,7 +39,7 @@ cd src
 nvq++ 0_deutsch_jozsa_phase_oracle.cpp -o deutsch_jozsa_phase_oracle
 ```
 
-To compile the CUDA and CUDA-Q files as an integration project, simply run the `makefile` on the root folder of the repository
+To compile the CUDA and CUDA-Q files as an integration project, simply run the `makefile` on the root folder of the repository:
 
 ```bash
 make clean && make -j$(nproc)
