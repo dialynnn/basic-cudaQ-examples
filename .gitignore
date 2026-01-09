@@ -1,3 +1,4 @@
 *.x
 *.tmp
 *.o
+test_run
