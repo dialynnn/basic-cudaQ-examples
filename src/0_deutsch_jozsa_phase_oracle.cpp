@@ -41,7 +41,7 @@ int main() {
     // Bitmask for the balanced phase oracle
     unsigned int balanced_mask = (1u << 0) | (1u << 1) | (1u << 2);
 
-    // Creating the circuit 
+    // Sampling the circuit
     auto result = cudaq::sample(deutsch_jozsa_phase_oracle, N, balanced_mask);
     result.dump();
     return 0;
