@@ -35,10 +35,11 @@ CUDA kernels live in `.cu` files and are compiled with `nvcc`; CUDA-Q code is co
 To compile `.cpp` CUDA-Q files, simply:
 
 ```bash
+cd src
 nvq++ 0_deutsch_jozsa_phase_oracle.cpp -o deutsch_jozsa_phase_oracle
 ```
 
-To compile the CUDA and CUDA-Q files as an integration project, simply run the `makefile`
+To compile the CUDA and CUDA-Q files as an integration project, simply run the `makefile` on the root folder of the repository
 
 ```bash
 make clean && make -j$(nproc)
