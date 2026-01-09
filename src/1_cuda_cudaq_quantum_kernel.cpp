@@ -61,7 +61,7 @@ int main() {
     int value = 67;  // https://youtu.be/v0NDDoNRtQ8?si=1b3NpHEbFp-VOEc3&t=23
 
     CHECK_CUDA(cudaMalloc(&d_out, sizeof(int)));
-    launch_basic_kernel(d_out, 67);
+    launch_basic_kernel(d_out, value);
     CHECK_CUDA(cudaDeviceSynchronize());
     CHECK_CUDA(cudaMemcpy(&h_out, d_out, sizeof(int), cudaMemcpyDeviceToHost));
     
