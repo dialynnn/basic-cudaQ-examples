@@ -58,7 +58,7 @@ int main() {
 
     int *d_out;
     int h_out = -1;
-    int value = 67;  // https://youtu.be/v0NDDoNRtQ8?si=1b3NpHEbFp-VOEc3&t=23
+    int value = 67;  
 
     CHECK_CUDA(cudaMalloc(&d_out, sizeof(int)));
     launch_basic_kernel(d_out, value);
